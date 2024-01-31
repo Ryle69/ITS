@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #eee5de;
+}
+
+.wedding{
+    margin: 10vw 0;
+
+}
+
+.wedding h1{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.desc{
+    padding: 8vw 10vw;
+    background-color: #f1cac4;
+}
+
+.desc p{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 600;
+}
+
+.main{
+    background-color: #caa298;
+    padding: 12vw;
+    display: flex;
+    justify-content: center;
+}
+
+.process{
+    background-color: #7c5848;
+    padding: 8vw 10vw;
+}
+
+.process p{
+    font-family: 'Gowun Dodum', sans-serif;
+    text-align: center;
+}
+
+.gallery{
+    padding: 8vw 0;
+}
+
+.gallery h6{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.r1{
+    display: flex;
+    flex-direction: row;
+    margin: 5vw 10vw;
+    justify-content: space-between;
+}
+
+.img1 img{
+    width: 20vw;
+}
+
+.img2 img{
+    width: 30vw;
+}
+
+.img3{
+    display: flex;
+    margin: 0 15vw 5vw 10vw;
+    justify-content: right;
+}
+
+.img3 img{
+    width: 45vw;
+}
+
+.img4{
+    display: flex;
+    margin: 0 10vw 5vw 20vw;
+    justify-content: left;
+}
+
+.img4 img{
+    width: 40vw;
+}
+
+.contact{
+    margin: 15vw;
+    background-color: #caa298;
+    border-radius: 2%;
+    padding-bottom: 4vw;
+}
+
+.contact h1{
+    text-align: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    line-height: 12vw;
+}
+
+/* .name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+.name input{
+    border-radius: 2vw / 2vw;
+    border-width: .1vw;
+    padding: 1vw 1vw 1vw 1vw;
+} */
+
+.email{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+
+.email input{
+    border-radius: 2vw / 2vw;
+    border-width: .1vw;
+    padding: 1vw 1vw 1vw 1vw;
+}
+
+/* .text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.text input{
+    height: 100%;
+    width: 81%;
+    border-radius: 4% / 15%;
+    border-bottom: .1vw;
+    padding: 1vw 1vw 10vw 1vw;
+    border: none;
+} */
+
+.name{
+    position: relative;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.name-field{
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 0.5vw 0;
+    background: transparent;
+    font-size: 2vw;
+    color: #ffffff;
+    transition: 0.3s ease;
+    /* background-color: azure; */
+}
+
+.name-label{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    font-size: 1vw;
+    color: black;
+    opacity: 80%;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    background-color: bisque;
+}
+
+.name-field::placeholder{
+    color: transparent;
+}
+
+.name-field:placeholder-shown ~ .name-label{
+    font-size: 2vw;
+    top: 20px;
+}
+
+.name-field:focus{
+    /* border-image: linear-gradient(to right, #ef5a03, #d1d357); */
+    border-image-slice: 1;
+}
+
+.name-field:focus ~ .name-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 1vw;
+    color: black;
+}
+
+/* End Test */
+
+.send{
+    display: flex;
+    justify-content: center;
+}
