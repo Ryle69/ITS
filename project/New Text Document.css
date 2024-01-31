@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #eee5de;
+}
+
+.wedding{
+    margin: 10vw 0;
+
+}
+
+.wedding h1{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.desc{
+    padding: 8vw 10vw;
+    background-color: #f1cac4;
+}
+
+.desc p{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+}
+
+.main{
+    background-color: #caa298;
+    padding: 12vw;
+    display: flex;
+    justify-content: center;
+}
+
+.main img{
+    width: 60vw;
+    border-radius: 2%;
+}
+
+.process{
+    background-color: #7c5848;
+    padding: 8vw 10vw;
+}
+
+.process p{
+    font-family: 'Gowun Dodum', sans-serif;
+    text-align: center;
+    font-size: 2.5vw
+}
+
+.gallery{
+    padding: 8vw 0;
+}
+
+.gallery h6{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 4vw;
+}
+
+/* New Gallery */
+
+
+.slider-gallery{
+    position: relative;
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 9 / 10;
+    overflow-x: auto;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5vw 5vw -0.75vw rgba(123, 86, 71, 0.9);
+    border-radius: 4%;
+    animation: slider 16s infinite;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1vw;
+    position: absolute;
+    bottom: 3vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #7c5848;
+    opacity: 60%;
+    transition: opacity ease;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+
+/* 
+#slider-gallery{
+    overflow: hidden;
+}
+
+#slider-gallery figure{
+    position: relative;
+    width: 500vw;
+    margin: 0;
+    left: 0;
+    animation: 20s slider-gallery infinite;
+}
+
+#slider-gallery figure img{
+    width: 100vw;
+    float: left;
+}
+
+@keyframes slider-gallery{
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100vw;
+    }
+    45% {
+        left: -100vw;
+    }
+    50% {
+        left: -200vw;
+    }
+    70% {
+        left: -200vw;
+    }
+    75% {
+        left: -300vw;
+    }
+    95% {
+        left: -300vw;
+    }
+    100% {
+        left: -400vw;
+    }
+
+} */
+
+/* Old Gallery */
+
+/* .r1{
+    display: flex;
+    flex-direction: row;
+    margin: 5vw 10vw;
+    justify-content: space-between;
+}
+
+.img1 img{
+    width: 20vw;
+}
+
+.img2 img{
+    width: 30vw;
+}
+
+.img3{
+    display: flex;
+    margin: 0 15vw 5vw 10vw;
+    justify-content: right;
+}
+
+.img3 img{
+    width: 45vw;
+}
+
+.img4{
+    display: flex;
+    margin: 0 10vw 5vw 20vw;
+    justify-content: left;
+}
+
+.img4 img{
+    width: 40vw;
+} */
+
+.contact{
+    margin: 20vw;
+    background-color: #caa298;
+    border-radius: 2%;
+    padding-bottom: 4vw;
+    box-shadow: 0 1.5vw 5vw -0.75vw rgba(123, 86, 71, 0.9);
+}
+
+.contact h1{
+    text-align: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: rgb(0, 0, 0, 0.7);
+    line-height:10vw;
+    font-size: 3.2vw;
+}
+
+/* Name Form */
+
+.name{
+    position: relative;
+    padding-top: 1vw;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name-field{
+    outline: 0;
+    border: 0;
+    border-bottom: 0.2vw solid rgb(0, 0, 0, 0.3);
+    padding: 0.9vw 0;
+    background: transparent;
+    font-size: 1.5vw;
+    color: rgb(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    width: 50vw;
+}
+
+.name-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.name-field::placeholder{
+    color: transparent;
+}
+
+.name-field:placeholder-shown ~ .name-label{
+    font-size: 1.5vw;
+    top: 2vw;
+    padding-left: 0.7vw;
+}
+
+.name-field:focus{
+    border-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(158, 81, 70, 1));
+    border-image-slice: 1;
+} 
+
+.name-field:focus ~ .name-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 1vw;
+    color: black;
+}
+
+/* End Name Form */
+/* Email Form */
+
+.email{
+    position: relative;
+    padding-top: 1vw;
+    width: 50vw;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-field{
+    outline: 0;
+    border: 0;
+    border-bottom: 0.2vw solid rgb(0, 0, 0, 0.3);
+    padding: 0.9vw 0;
+    background: transparent;
+    font-size: 1.5vw;
+    color: rgb(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    width: 50vw;
+}
+
+.email-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.email-field::placeholder{
+    color: transparent;
+}
+
+.email-field:placeholder-shown ~ .email-label{
+    font-size: 1.5vw;
+    top: 2vw;
+    padding-left: 0.7vw;
+}
+
+.email-field:focus{
+    border-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(158, 81, 70, 1));
+    border-image-slice: 1;
+} 
+
+.email-field:focus ~ .email-label{
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 1vw;
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0, 0.3);
+}
+
+/* End Email Form */
+/* Message Form */
+
+.message{
+    position: relative;
+    padding-top: 1vw;
+    width: 50vw;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message textarea{
+    padding: 1vw;
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: transparent;
+    width: 48vw;
+    color: rgb(0, 0, 0, 0.7);
+    border-color: rgb(0, 0, 0, 0.3);
+    border-width: 0.2vw;
+    outline: none !important;
+}
+
+.message-field:focus{
+    border-image: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(158, 81, 70, 1));
+    border-image-slice: 0.5;
+} 
+
+/* End Message Form */
+
+.send{
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.send button{
+    font-family: 'Gowun Dodum', sans-serif;
+    border-radius: 10% / 20%;
+    border-width: 0.1vw;
+    background-color: rgb(124, 88, 72, 0.4);
+    font-size: 1.3vw;
+    color: rgb(0, 0, 0, 0.6);
+    border-style: solid;
+    border-color: rgb(0, 0, 0, 0.4);
+}
